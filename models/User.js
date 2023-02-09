@@ -14,7 +14,7 @@ const userSchema = mongoos.Schema({
         type:String,
         minlength: 5
     },
-    last name: {
+    lastname: {
         type:String,
         maxlength: 50
     },
@@ -31,6 +31,6 @@ const userSchema = mongoos.Schema({
     }
 })
 
-const User = mongoose.model('User', userSchema)
+const User = mongoos.model('User', userSchema)
 
 module.exports = {User}
